@@ -27,3 +27,19 @@ Na primeira parte, é apresentado um circuito de trava RS com clock (gated RS la
 Embora o latch possa ser implementado corretamente em uma única LUT de 4 entradas, isso não permite a observação dos sinais internos (`R_g` e `S_g`). Para resolver isso, é utilizada uma diretiva do compilador Quartus chamada `KEEP`, que garante que cada sinal interno seja preservado e implementado em elementos lógicos separados. O resultado final é um circuito com quatro LUTs de 4 entradas, como mostrado na Figura 3b.
 
 ## Resumo da tarefa 2
+
+Nesta tarefa, a partir da análise de um Latch D fornecido, foi solicitado que fosse implementado no Quartus/VHDL, executado na placa FPGA e analisado sua simulação no Modelsim.
+
+## Parte I: Análise do Latch D fornecido
+
+O latch D fornecido é implementado apenas com portas NAND e possui comportamento semelhante ao Latch da tarefa 1.
+
+## Parte II: Implementação no Quartus/VHDL
+
+A implementação foi realizada de duas formas. 
+A primeira resume-se em desenvolver um código VHDL com base no fornecido para o Latch da tarefa 1, ou seja, foram feitas modificações na lógica de implementação do primeiro código para que o funcionamento fosse transformado para o latch D.
+Já a segunda, foi feita através da implementação em circuito esquemático e, então, convertido em bloco de VHDL por meio das ferramentas do Quartus.
+
+## Parte III: Execução na placa FPGA
+
+A placa utilizada foi a placa V. Dessa forma, foram construídos as correspondências na seção 'Assignments 
