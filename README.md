@@ -43,3 +43,23 @@ Já a segunda, foi feita através da implementação em circuito esquemático e,
 ## Parte III: Execução na placa FPGA
 
 A placa utilizada foi a placa V. Dessa forma, foram construídos as correspondências na seção 'Assignments 
+
+## Resumo da Tarefa: Implementação de um Flip-Flop Master-Slave
+
+Nesta parte do projeto, implementamos um flip-flop master-slave tipo D, utilizando os latches (gated D ) desenvolvidos na Parte II. O flip-flop master-slave é um componente essencial em circuitos sequenciais, utilizado para armazenar e transferir dados de forma sincronizada com o clock.
+
+### Funcionamento do Flip-Flop Master-Slave:
+
+- **Estrutura do Circuito:**
+  - O flip-flop master-slave é composto por dois latches D conectados em série. O primeiro latch funciona como o "Master", enquanto o segundo atua como o "Slave".
+  - O latch "Master" captura o valor de entrada D quando o clock está em nível baixo (0). Durante esse período, o latch "Slave" permanece bloqueado e não altera seu estado.
+  - Quando o clock sobe para nível alto (1), o latch "Master" é bloqueado, e o valor capturado é transferido para o latch "Slave", que então atualiza sua saída Q.
+
+- **Comportamento Sincronizado:**
+  - A transferência de dados ocorre apenas na transição do clock de baixo para alto, garantindo que as mudanças nos dados sejam estáveis e sincronizadas, evitando alterações indesejadas causadas por flutuações ou ruídos no sinal.
+
+- **Saída Q:**
+  - A saída Q reflete o valor armazenado no latch "Slave", representando o estado do flip-flop após a borda de subida do clock. Este valor é mantido constante até a próxima borda de subida, independentemente de mudanças na entrada D durante o ciclo do clock.
+
+A construção deste flip-flop master-slave utilizando os latches D com clock da Parte II permite a captura e o armazenamento de dados de maneira precisa e previsível, sendo ideal para aplicações que requerem sincronização e integridade dos dados.
+
