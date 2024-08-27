@@ -32,7 +32,7 @@ Nesta tarefa, a partir da análise de um Latch D fornecido, foi solicitado que f
 
 ### Parte I: Análise do Latch D fornecido
 
-O latch D fornecido é implementado apenas com portas NAND e possui comportamento semelhante ao Latch da tarefa 1.
+O latch D fornecido é implementado apenas com portas NAND e possui comportamento semelhante ao Latch da tarefa 1. Seu funcionamento é baseado no controle do clock Clk. Quando o clk está em nível lógico alto (1), a saída recebe quaisquer variações da entrada D, ou seja, enquanto o clk estiver alto, se o D for para 1, Q recebe 1; se D for para 0, Q recebe 0. Em contrapartida, quando o clk está em nível lógico baixo (0), as mudanças na entrada D não intereferem na saída Q.
 
 ### Parte II: Implementação no Quartus/VHDL
 
@@ -42,7 +42,11 @@ Já a segunda, foi feita através da implementação em circuito esquemático e,
 
 ### Parte III: Execução na placa FPGA
 
-A placa utilizada foi a placa V. Dessa forma, foram construídos as correspondências na seção 'Assignments 
+A placa utilizada foi a placa V. Dessa forma, foram construídos as correspondências na seção 'Assignments'para as entradas e saídas verificadas no latch D. A execução possibilitou uma análise mais prática do funcionamento do latch D.
+
+### Parte IV: Simulação
+
+O diagrama de tempo da simulação foi construído por meio do Modelsim. Para isso, salvou-se inicialmente o código VHDL desenvolvido no Quartus e, então, criou-se um projeto no Modelsim, cujo elemento principal era o arquivo em formato VHDL do latch D. Após a compilação, simulou-se e, manualmente, através de mudanças no 'force' dos inputs D e Clk, verificou-se as correspondentes saídas de Q. Essas correspondências podem ser analisadas no diagrama de tempo. 
 
 ## Resumo da Tarefa 3: Implementação de um Flip-Flop Master-Slave
 
