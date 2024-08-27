@@ -30,21 +30,21 @@ Embora o latch possa ser implementado corretamente em uma única LUT de 4 entrad
 
 Nesta tarefa, a partir da análise de um Latch D fornecido, foi solicitado que fosse implementado no Quartus/VHDL, executado na placa FPGA e analisado sua simulação no Modelsim.
 
-## Parte I: Análise do Latch D fornecido
+### Parte I: Análise do Latch D fornecido
 
 O latch D fornecido é implementado apenas com portas NAND e possui comportamento semelhante ao Latch da tarefa 1.
 
-## Parte II: Implementação no Quartus/VHDL
+### Parte II: Implementação no Quartus/VHDL
 
 A implementação foi realizada de duas formas. 
 A primeira resume-se em desenvolver um código VHDL com base no fornecido para o Latch da tarefa 1, ou seja, foram feitas modificações na lógica de implementação do primeiro código para que o funcionamento fosse transformado para o latch D.
 Já a segunda, foi feita através da implementação em circuito esquemático e, então, convertido em bloco de VHDL por meio das ferramentas do Quartus.
 
-## Parte III: Execução na placa FPGA
+### Parte III: Execução na placa FPGA
 
 A placa utilizada foi a placa V. Dessa forma, foram construídos as correspondências na seção 'Assignments 
 
-## Resumo da Tarefa: Implementação de um Flip-Flop Master-Slave
+## Resumo da Tarefa 3: Implementação de um Flip-Flop Master-Slave
 
 Nesta parte do projeto, implementamos um flip-flop master-slave tipo D, utilizando os latches (gated D ) desenvolvidos na Parte II. O flip-flop master-slave é um componente essencial em circuitos sequenciais, utilizado para armazenar e transferir dados de forma sincronizada com o clock.
 
